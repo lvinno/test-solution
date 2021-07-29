@@ -1,11 +1,12 @@
 .card-info-row {
   display: flex;
+  width: 100%;
   height: 32px;
   align-items: flex-end;
   border-bottom: 1px solid rgb(219, 223, 225);
 }
 .field-name {
-  width: 75px;
+  width: 4.68rem;
   text-transform: uppercase;
   font-size: 10px;
   color: #34495e;
@@ -14,7 +15,7 @@
 }
 
 .field-data {
-  width: 325px;
+  width: 19.695rem;
   font-size: 16px;
   color: #000000;
   font-family: "Merriweather";
@@ -22,7 +23,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
   &-short {
-    width: 125px;
+    width: 7.5rem;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;

@@ -1,7 +1,7 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const isDevelopment = process.env.NODE_ENV === "production";
+const isDevelopment = process.env.NODE_ENV !== "production";
 module.exports = {
   entry: path.join(__dirname, "src", "index.js"),
   output: { path: path.join(__dirname, "build"), filename: "index.bundle.js" },

@@ -1,6 +1,8 @@
 import React, { useEffect, useRef } from "react";
 import { useForm } from "react-hook-form";
 import { useSelector, useDispatch } from "react-redux";
+import alertify from "alertifyjs";
+alertify.set("notifier", "position", "top-center");
 
 import { setUserProfile } from "@/redux/actions";
 
@@ -19,7 +21,7 @@ const FormMain = (props) => {
     formState: { errors },
   } = useForm();
 
-  const onSubmit = (data) => console.log(data);
+  const onSubmit = () => alertify.success("Your hCard has been created");
   const dispatch = useDispatch();
   const watchAllFields = watch();
 

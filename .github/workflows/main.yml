@@ -5,11 +5,10 @@ on:
   push:
     branches:
       - master
+
 jobs:
   build:
     runs-on: ubuntu-latest
-    env:
-      NODE_ENV: production
     strategy:
       matrix:
         node-version: [12.x]
@@ -24,6 +23,8 @@ jobs:
         run: |
           npm install
       - name: Production Build
+        env:
+          NODE_ENV: production
         run: |
           npm run build
       - name: Unit Tests

@@ -7,3 +7,11 @@
   align-items: flex-start;
   padding: 135px;
 }
+
+/* If the screen size is 600px wide or less, hide the element */
+@media only screen and (max-width: 720px) {
+  .preview-container {
+    height: 400px;
+    padding: 35px;
+  }
+}

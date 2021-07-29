@@ -18,7 +18,13 @@
   font-size: 16px;
   color: #000000;
   font-family: "Merriweather";
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   &-short {
     width: 125px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 }

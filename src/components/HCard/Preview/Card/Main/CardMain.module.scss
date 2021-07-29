@@ -1,0 +1,13 @@
+.card-main-wrapper {
+  box-sizing: border-box;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  height: 205px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-main-bottom-row {
+  display: flex;
+}

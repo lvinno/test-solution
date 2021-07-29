@@ -1,18 +1,17 @@
 import React from "react";
 
-import Form from "@Components/HCard/Form/Form";
-import Preview from "@Components/HCard/Preview/Preview";
+import FormContainer from "@/components/HCard/Form/FormContainer";
+import PreviewContainer from "@/components/HCard/Preview/PreviewContainer";
 
 import styles from "./Wrapper.module.scss";
 const HCardWrapper = () => {
   return (
     <div className={styles["hcard-wrapper"]}>
       <div className={styles["hcard-left"]}>
-        <Form></Form>
+        <FormContainer></FormContainer>
       </div>
       <div className={styles["hcard-right"]}>
-        {" "}
-        <Preview></Preview>
+        <PreviewContainer></PreviewContainer>
       </div>
     </div>
   );

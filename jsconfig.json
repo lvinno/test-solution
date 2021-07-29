@@ -4,7 +4,8 @@
       "baseUrl": ".",
       "paths": {
         "@/*": ["./src/*"],
-        "@Components/*": ["./src/components/*"]
+        "@Components/*": ["./src/components/*"],
+        "@Public/*": ["./public/*"]
       }
     },
     "exclude": ["node_modules", "build"]

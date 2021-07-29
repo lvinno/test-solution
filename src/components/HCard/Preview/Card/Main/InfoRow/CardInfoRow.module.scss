@@ -1,0 +1,24 @@
+.card-info-row {
+  display: flex;
+  height: 32px;
+  align-items: flex-end;
+  border-bottom: 1px solid rgb(219, 223, 225);
+}
+.field-name {
+  width: 75px;
+  text-transform: uppercase;
+  font-size: 10px;
+  color: #34495e;
+  font-weight: 400;
+  font-family: "Merriweather Sans";
+}
+
+.field-data {
+  width: 325px;
+  font-size: 16px;
+  color: #000000;
+  font-family: "Merriweather";
+  &-short {
+    width: 125px;
+  }
+}

@@ -1,13 +1,18 @@
 .hcard-wrapper {
+  box-sizing: border-box;
   display: flex;
   width: 100%;
   height: 100%;
   .hcard-left {
+    flex-shrink: 0;
+    flex-grow: 1;
     width: 48%;
     height: 100%;
   }
   .hcard-right {
-    width: 62%;
+    flex-shrink: 0;
+    flex-grow: 1;
+    width: 52%;
     height: 100%;
     background-color: rgb(225, 228, 231);
   }

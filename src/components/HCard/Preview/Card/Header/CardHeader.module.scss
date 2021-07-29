@@ -1,0 +1,25 @@
+.card-header-wrapper {
+  width: 100%;
+  height: 100px;
+  position: relative;
+  background-color: rgb(44, 62, 80);
+}
+.card-header-name {
+  font-size: 24px;
+  color: #ffffff;
+  font-weight: 700;
+  font-family: "Merriweather";
+  position: absolute;
+  bottom: 25px;
+  left: 25px;
+}
+
+img {
+  height: 105px;
+  width: 85px;
+  background-size: cover;
+  border: 1px solid rgb(179, 179, 179);
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}

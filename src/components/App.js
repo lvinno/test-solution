@@ -1,5 +1,5 @@
 import React from "react";
-import HCardWrapper from "@Components/HCard/HCardWrapper/HCardWrapper";
+import HCardWrapper from "@Components/HCard/HCardWrapper";
 const App = () => {
   return (
     <div>

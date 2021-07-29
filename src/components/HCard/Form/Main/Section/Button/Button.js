@@ -3,13 +3,14 @@ import React from "react";
 import styles from "./Button.module.scss";
 const Button = (props) => {
   return (
-    <span
+    <button
       className={styles.button}
       style={{ backgroundColor: props.bgColor }}
       onClick={props.onClick}
+      type={props.type || "button"}
     >
       {props.children}
-    </span>
+    </button>
   );
 };
 

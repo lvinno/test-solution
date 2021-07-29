@@ -8,7 +8,11 @@ const CardHeader = ({ userProfile }) => {
       <div className={styles["card-header-name"]}>{`${
         userProfile.givenName || ""
       } ${userProfile.surname || ""}`}</div>
-      <img src={userProfile.avatar || defaultAvatar} alt="avatar" />
+      <img
+        src={userProfile.avatar || defaultAvatar}
+        alt="avatar"
+        data-testid="avatar-preview"
+      />
     </div>
   );
 };

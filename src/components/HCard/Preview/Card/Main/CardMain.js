@@ -19,7 +19,11 @@ const CardMain = ({
       <CardInfoRow fieldName={"email"} data={email}></CardInfoRow>
       <CardInfoRow fieldName={"phone"} data={phone}></CardInfoRow>
       <CardInfoRow fieldName={"address"} data={addressLine1}></CardInfoRow>
-      <CardInfoRow fieldName={""} data={addressLine2}></CardInfoRow>
+      <CardInfoRow
+        fieldName={""}
+        dataId={"addressLine2"}
+        data={addressLine2}
+      ></CardInfoRow>
       <div className={styles["card-main-bottom-row"]}>
         <CardInfoRow
           fieldName={"postcode"}

@@ -39,4 +39,13 @@ describe("Form", () => {
       expect(input.value).toEqual("test");
     });
   });
+
+  it("will show errors when submitting invalid data", () => {
+    render(<FormContainer />);
+
+    const button = screen.getByText(/Create hCard/i);
+    const errors = screen.getAllByTestId("error");
+    userEvent.click(button);
+    expect(errors.length).toBeGreaterThan(0);
+  });
 });
